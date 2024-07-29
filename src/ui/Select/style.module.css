@@ -1,0 +1,55 @@
+.Select {
+    width: 100%;
+    position: relative;
+    user-select: none;
+}
+
+.Value {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    width: 100%;
+    border-radius: 100px;
+    cursor: pointer;
+    justify-content: space-between;
+    border: 1px solid #343434;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #343434;
+}
+
+.Value svg {
+    width: 24px;
+    height: 24px;
+    color: #343434;
+    transition: .5s;
+}
+
+.Value svg.Active {
+    transform: rotate(180deg);
+}
+
+.List {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #343434;
+    z-index: 10;
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 0;
+}
+
+.List div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.List div:hover {
+    background: rgba(0, 0, 0, 0.1);
+}

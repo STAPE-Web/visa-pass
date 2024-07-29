@@ -1,0 +1,11 @@
+.Box {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+}
+
+.Text {
+    font-size: 14px;
+    font-weight: 600;
+}

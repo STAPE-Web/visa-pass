@@ -1,0 +1,27 @@
+.Button {
+    background: #000;
+    border-radius: 30px;
+    padding: 13px 44px;
+    gap: 10px;
+    height: 44px;
+    color: #fff;
+    line-height: 22px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.Button:hover {
+    opacity: .7;
+}
+
+.Button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

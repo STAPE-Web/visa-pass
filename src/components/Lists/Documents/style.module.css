@@ -1,0 +1,79 @@
+.Box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.AdditionalBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.List {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.List div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 150%;
+}
+
+.List div svg {
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+    color: #F7CC00;
+}
+
+.Tabs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background: #f1f1f1;
+    border-radius: 100px;
+}
+
+.Tabs div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    color: #343434;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Tabs div.Active {
+    background: #F7CC00;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .Tabs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .Tabs div {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Tabs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,38 @@
+.Item {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Item .Question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.Item .Question h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+}
+
+.Item .Question svg {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    transition: .5s;
+}
+
+.Item .Question svg.Active {
+    transform: rotate(180deg);
+}
+
+.Item .Answer {
+    font-size: 16px;
+    line-height: 150%;
+}

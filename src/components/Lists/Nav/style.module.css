@@ -1,0 +1,23 @@
+.Nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.Nav li {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.Nav li:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 700px) {
+    .Nav {
+        display: none;
+    }
+}

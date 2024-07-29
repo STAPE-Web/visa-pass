@@ -1,0 +1,20 @@
+.Section {
+    max-width: 1250px;
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media screen and (max-width: 1300px) {
+    .Section {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Section {
+        margin: 50px auto;
+    }
+}
